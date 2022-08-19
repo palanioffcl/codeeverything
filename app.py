@@ -52,7 +52,3 @@ def spss():
 @app.route('/machine_learning')
 def machine_learning():
     return render_template('machine_learning.html')
-
-
-if __name__ == '__main__':
-    app.run(debug=False)
