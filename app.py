@@ -33,9 +33,9 @@ def learn_sql():
 def java():
     return render_template('java.html')
 
-@app.route('/pwn_reversing')
+@app.route('/pwn')
 def pwn_reverse():
-    return render_template('pwn_reverse.html')
+    return render_template('binary_exploitation.html')
 
 @app.route('/interviewprep')
 def interviewprep():
@@ -44,6 +44,14 @@ def interviewprep():
 @app.route('/php')
 def learn_php():
     return render_template('php.html')
+
+@app.route('/spss')
+def spss():
+    return render_template('spss.html')
+
+@app.route('/machine_learning')
+def machine_learning():
+    return render_template('machine_learning.html')
 
 
 if __name__ == '__main__':
