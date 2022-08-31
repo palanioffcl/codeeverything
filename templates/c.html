@@ -1,15 +1,129 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>Code Everything</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
-    <div class="container">
-      <h1>Code Everything</h2>
-      <br>
-      <p>Click <a href="/">here</a> to go home.</p>
+<body>
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="container-fluid">
+      <image src="{{url_for('static',filename = '/logo.jpg')}}" >
+        <ul class="nav navbar-nav navbar-left">
+          <li><a class="active"   href="/">Home</a></li>
+          <li><a class="nav-link" href="/c/ifelse">If-else</a></li>   
+          <li><a class="nav-link" href="/c/operators">Operators</a></li>
+          <li><a class="nav-link" href="/c/variables">Varibles</a></li>
+          <li><a class="nav-link" href="/c/loops">Loops</a></li>
+          <li><a class="nav-link" href="/c/functions">Functions</a></li>
+          <li><a class="nav-link" href="/c/libraries">Libraries</a></li>
+          <li><a class="nav-link" href="/c/files">Files</a></li>
+          <li><a class="nav-link" href="/c/exceptions">Exceptions</a></li>
+          <li><a class="nav-link" href="/c/summary">Summary</a></li>
+          <li><a class="nav-link" href="/c/nextstep">Whats Next</a></li>
+        </ul>
     </div>
-  </body>
+  </nav>
+         
+<div class="container" style="margin-top:25px;">
+  <div class="row">
+    <div class="col-md-2">
+      <h4>Contents</h4><hr>
+        <ul>
+          <li><a href="/c">Introduction</a></li>
+          <li><a href="/c/installation">Installation</a></li>
+          <li><a href="/c/compilation">Compilation Process</a></li>
+          <li><a href="/c/operator">Operators</a></li>
+          <li><a href="/c/builtin">Headers</a></li>
+          <hr>
+          <li><a href="/c/arrays">Arrays</a></li>
+          <li><a href="/c/usr_data_type">User Defined datatypes</a></li>
+          <li><a href="/c/ifelse">Conditional Statements</a></li>
+          <li><a href="/c/loops">Loops in C</a></li>
+          <hr>
+          <li><a href="/c/exceptions">Exception Handling</a></li>
+          <li><a href="/c/files">File</a></li>
+          <li><a href="/c/libraries">Libraries</a></li>
+          <hr>
+          <li><a href="/c/tkinter">What is tkinter</a></li>
+          <li><a href="/c/project">Project time</a></li>
+          <li><a href="/c/resc">Additional Resources</a></li>
+        </ul>
+      </div>
+      <div class="col-md-10 h5">
+        <h2>Welcome to C Programming</h2>
+          <ul>
+            <li>Prerequesites</li>
+            <li>What you will learn</li>
+            <li>What is C</li>
+            <li>History of C</li>
+            <li>C Compiler</li>
+          </ul> 
+		<img src="/static/c/c.png">
+          <p>C language Tutorial with programming approach for beginners and professionals, helps you to understand the C language tutorial easily. Our C tutorial explains each topic with programs.<br>
+	     The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc.<br>
+	     C programming is considered as the base for other programming languages, that is why it is known as mother language.<br>
+
+	     It can be defined by the following ways:
+	     <ul>
+ 		<li> Mother language</li>
+ 		<li>System programming language</li>
+ 		<li>Procedure-oriented programming language</li>
+ 		<li>Structured programming language</li>
+ 		<li>Mid-level programming language</li>
+	     </ul>
+
+	C Identifiers:
+	     <ul>
+ 		<li>C identifiers represent the name in the C program, for example, variables, functions, arrays, structures, unions, labels, etc.</li>
+ 		<li>An identifier can be composed of letters such as uppercase, lowercase letters, underscore, digits, but the starting letter should be either an alphabet or an underscore.</li>
+ 		<li>If the identifier is not used in the external linkage, then it is called as an internal identifier.</li>
+ 		<li>If the identifier is used in the external linkage, then it is called as an external identifier.</li>
+ 		<li>We can say that an identifier is a collection of alphanumeric characters that begins either with an alphabetical character or an underscore, which are used to represent various programming elements such as variables, functions, arrays, structures, unions, labels and even more.</li>
+ 		<li>There are 52 alphabetical characters (uppercase and lowercase), underscore character,and ten numerical digits (0-9) that represent the identifiers.</li>
+ 		<li>There is a total of 63 alphanumerical characters that represent the identifiers.</li>
+	     </ul><br>
+
+        C Control Statements:<br>
+	<p class="strong">C if else Statement:</p>
+
+               <ul><li>The if-else statement in C is used to perform the operations based on some specific condition.</li>
+               <li>The operations specified in if block are executed if and only if the given condition is true.</li>
+</ul><br>
+	There are the following variants of if statement in C language.
+	<ul>
+               <li>If statement</li>
+               <li>If-else stateme</li>
+               <li>If else-if ladder</li>
+               <li>Nested if</li></ul>
+<br>
+	C Switch Statement:
+		<ul>
+               <li>The switch statement in C is an alternate to if-else-if ladder statement which allows us to execute multiple operations for the different possibles values of a single variable called switch variable.</li>
+               <li>Here, We can define various statements in the multiple cases for the different values of a single variable.</li>
+</ul><br>
+	C Loops:
+		<ul>
+   	       <li>The looping can be defined as repeating the same process multiple times until a specific condition satisfies.
+               <li>There are three types of loops used in the C language. In this part of the tutorial, we are going to learn all the aspects of C loops.
+</ul><br>
+        Why use loops in C language?
+		<ul>
+  	       <li>The looping simplifies the complex problems into the easy ones.</li>
+	       <li>It enables us to alter the flow of the program so that instead of writing the same code again and again,we can repeat the same code for a finite number of times.</li>
+		</ul><br>
+   	      For example, if we need to print the first 10 natural numbers then, instead of using the printf statement 10 times,we can print inside a loop which runs up to 10 iterations.
+
+	Advantage of loops in C:
+	     <ul>
+ 		<li>It provides code reusability.</li>
+ 		<li>Using loops, we do not need to write the same code again and again.</li>
+ 		<li>Using loops, we can traverse over the elements of data structures (array or linked lists).
+	     </ul>
+</p>
+<a href="https://instagram.com/j.o.s.h.u.a._.x">Contributed by Joshua Sebastian</a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

@@ -21,9 +21,9 @@ def ds_algo():
 def linux():
     return render_template('linux.html')
 
-@app.route('/datascience')
+@app.route('/bootstrap')
 def datascience():
-    return render_template('datascience.html')
+    return render_template('bootstrap.html')
 
 @app.route('/sql')
 def learn_sql():
@@ -45,9 +45,9 @@ def interviewprep():
 def learn_php():
     return render_template('php.html')
 
-@app.route('/spss')
+@app.route('/cpp')
 def spss():
-    return render_template('spss.html')
+    return render_template('cpp.html')
 
 @app.route('/machine_learning')
 def machine_learning():
